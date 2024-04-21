@@ -16,7 +16,7 @@ import torchvision
 
 def parse_args(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
     parser.add_argument(
-        "--variant", type=str, required=True, help="Provide fastvit model variant name."
+        "--variant", type=str, required=True, help="Provide shvit model variant name."
     )
     parser.add_argument(
         "--output-dir",
@@ -49,7 +49,7 @@ def export(variant: str, output_dir: str, checkpoint: str = None, res_h: int = 2
     """Method exports coreml package for mobile inference.
 
     Args:
-        variant: FastViT model variant.
+        variant: shvit model variant.
         output_dir: Path to save exported model.
         checkpoint: Path to trained checkpoint. Default: ``None``
     """
