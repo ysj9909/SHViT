@@ -83,6 +83,21 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_
 ```
 </details>
 
+## Latency Measurement
+Run the following command to compare the throughputs on GPU/CPU:
+
+```
+python speed_test.py
+```
+
+The mobile latency reported in SHViT for iPhone 12 uses the deployment tool from [XCode 14](https://developer.apple.com/videos/play/wwdc2022/10027/).
+export the model to Core ML model
+
+```
+python export_model.py --variant shvit_s4 --output-dir /path/to/save/exported_model \
+--checkpoint /path/to/pretrained_checkpoints/shvit_s4.pth
+```
+
 ## Citation
 If our work or code help your work, please cite our paper:
 ```
