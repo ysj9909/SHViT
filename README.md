@@ -91,6 +91,7 @@ python speed_test.py
 ```
 
 The mobile latency reported in SHViT for iPhone 12 uses the deployment tool from [XCode 14](https://developer.apple.com/videos/play/wwdc2022/10027/).
+
 export the model to Core ML model
 
 ```
