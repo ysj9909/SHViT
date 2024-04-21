@@ -42,6 +42,46 @@ Download the [ImageNet-1K](http://image-net.org/) dataset and structure the data
       img4.jpeg
 ```
 
+To train SHViT models, follow the respective command below:
+<details>
+<summary>
+SHViT-S1
+</summary>
+
+```
+python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_env main.py --model shvit_s1 --data-path $PATH_TO_IMAGENET --dist-eval --weight-decay 0.025
+```
+</details>
+
+<details>
+<summary>
+SHViT-S2
+</summary>
+
+```
+python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_env main.py --model shvit_s2 --data-path $PATH_TO_IMAGENET --dist-eval --weight-decay 0.032
+```
+</details>
+
+<details>
+<summary>
+SHViT-S3
+</summary>
+
+```
+python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_env main.py --model shvit_s3 --data-path $PATH_TO_IMAGENET --dist-eval --weight-decay 0.035
+```
+</details>
+
+<details>
+<summary>
+SHViT-S4
+</summary>
+
+```
+python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_env main.py --model shvit_s4 --data-path $PATH_TO_IMAGENET --dist-eval --weight-decay 0.03 --input-size 256
+```
+</details>
 
 ## Citation
 If our work or code help your work, please cite our paper:
