@@ -1,6 +1,5 @@
 # --------------------------------------------------------
 # Main (train/validate)
-# Copyright (c) 2022 Microsoft
 # Adapted from LeViT and Swin Transformer
 #   LeViT: (https://github.com/facebookresearch/levit)
 #   Swin: (https://github.com/microsoft/swin-transformer)
