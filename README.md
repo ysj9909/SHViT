@@ -83,6 +83,25 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_
 ```
 </details>
 
+
+## Pre-trained Models
+| name | resolution | acc | #params | FLOPs | Throughput | model |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
+| SHViT-S1 | 224x224 | 72.8 | 6.3M | 241M | 33489 |[model](https://github.com/ysj9909/SHViT/releases/download/v1.0/shvit_s1.pth) |
+| SHViT-S2 | 224x224 | 75.2 | 11.4M | 366M | 26878 | [model](https://github.com/ysj9909/SHViT/releases/download/v1.0/shvit_s2.pth) |
+| SHViT-S3 | 224x224 | 77.4 | 14.2M | 601M | 20522 | [model](https://github.com/ysj9909/SHViT/releases/download/v1.0/shvit_s3.pth) |
+| SHViT-S4 | 256x256 | 79.4 | 16.5M | 986M | 14283 | [model](https://github.com/ysj9909/SHViT/releases/download/v1.0/shvit_s4.pth) |
+
+
+## Evaluation
+Before evaluation, we need to prepare the pre-trained models.
+
+Run the following command to evaluate a pre-trained SHViT-S4 on ImageNet-1K validation set with a single GPU:
+```bash
+python main.py --eval --model shvit_s4 --resume ./shvit_s4.pth --data-path $PATH_TO_IMAGENET --input-size 256
+```
+
+
 ## Latency Measurement
 Run the following command to compare the throughputs on GPU/CPU:
 
