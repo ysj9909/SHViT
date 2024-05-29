@@ -94,8 +94,6 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port 12345 --use_
 
 
 ## Evaluation
-Before evaluation, we need to prepare the pre-trained models.
-
 Run the following command to evaluate a pre-trained SHViT-S4 on ImageNet-1K validation set with a single GPU:
 ```bash
 python main.py --eval --model shvit_s4 --resume ./shvit_s4.pth --data-path $PATH_TO_IMAGENET --input-size 256
