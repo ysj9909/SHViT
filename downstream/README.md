@@ -104,6 +104,17 @@ bash ./dist_train.sh configs/mask_rcnn_shvit_s4_fpn_1x_coco.py 8 --cfg-options m
 </details>
 
 
+## Citation
+If our work or code help your work, please cite our paper:
+```
+@inproceedings{yun2024shvit,
+  author = {Yun, Seokju and Ro, Youngmin},
+  title = {SHViT: Single-Head Vision Transformer with Memory Efficient Macro Design},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2024}
+}
+```
+
 ## Acknowledge
 
 The downstream task implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
