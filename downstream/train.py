@@ -6,7 +6,6 @@ import time
 import warnings
 
 import mmcv
-import mmengine
 import torch
 import torch.distributed as dist
 from mmcv import Config, DictAction
