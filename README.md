@@ -121,10 +121,11 @@ python export_model.py --variant shvit_s4 --output-dir /path/to/save/exported_mo
 If our work or code help your work, please cite our paper:
 ```
 @inproceedings{yun2024shvit,
-  author = {Yun, Seokju and Ro, Youngmin},
-  title = {SHViT: Single-Head Vision Transformer with Memory Efficient Macro Design},
+  author={Yun, Seokju and Ro, Youngmin},
+  title={SHViT: Single-Head Vision Transformer with Memory Efficient Macro Design},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2024}
+  pages={5756--5767},
+  year={2024}
 }
 ```
 
